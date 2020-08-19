@@ -1,0 +1,17 @@
+h1, p {
+  font-family: 'Oxygen', sans-serif;
+}
+
+h5, p {
+  color: darkgrey;
+}
+
+
+.t-head{
+  text-align: center;
+}
+
+tr {
+  line-height: .5rem;
+  text-align: center;
+}
