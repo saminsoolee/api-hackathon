@@ -12,5 +12,6 @@ $.ajax({
   success: data => {
     var quoteData = data.quote.quoteText
     quoteContainer.textContent = quoteData
+    console.log(data)
     console.log(quoteData)}
 })
