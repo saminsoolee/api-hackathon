@@ -1,17 +1,42 @@
-h1, p {
-  font-family: 'Oxygen', sans-serif;
+*{
+  background-color: #202020;
+  font-family: 'Alata', sans-serif;
+}
+h1{
+  padding-top: 10px;
+  font-family: 'Monoton', cursive;
+}
+.container {
+  max-width: 800px;
+}
+
+.quote-container {
+  padding: 10px;
 }
 
 h5, p {
-  color: darkgrey;
+  font-size: 9px;
+  font-family: 'Press Start 2P', cursive;
+  color: whitesmoke;
 }
-
 
 .t-head{
   text-align: center;
 }
 
 tr {
-  line-height: .5rem;
+  line-height: .75rem;
   text-align: center;
+}
+
+input, td {
+  color:whitesmoke;
+}
+
+button {
+  font-family: 'Alata', sans-serif;
+}
+
+.current-event-container {
+  max-width: 500px;
 }
