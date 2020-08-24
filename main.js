@@ -23,9 +23,9 @@ $.ajax({
     ethereumData.textContent = ethereumInfo.toFixed(5)
     litecoinData.textContent = litecoinInfo.toFixed(5)
   },
-    error: data => {
-     errorModal.classList.remove('hidden');
-    }
+  error: data => {
+    errorModal.classList.remove('hidden');
+  }
 })
 
 $.ajax({
