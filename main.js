@@ -6,8 +6,8 @@ var ethereumData = document.querySelector(".ethereum-data");
 var litecoinData = document.querySelector(".litecoin-data");
 var inputData = document.querySelector(".input-dollar-amount");
 var dollarButton = document.querySelector(".us-button")
-var errorButton = document.querySelector('.error-info');
-var errorModal = document.querySelector('.error-modal');
+var errorButton = document.querySelector(".error-info");
+var errorModal = document.querySelector(".error-modal");
 var bitcoinInfo;
 var ethereumInfo;
 var litecoinInfo;
@@ -24,7 +24,7 @@ $.ajax({
     litecoinData.textContent = litecoinInfo.toFixed(5)
   },
     error: data => {
-     errorModal.classList.remove('hidden')
+     errorModal.classList.remove('hidden');
     }
 })
 
@@ -32,17 +32,21 @@ $.ajax({
   type: "GET",
   url: "https://quote-garden.herokuapp.com/api/v2/quotes/random",
   success: data => {
-    var quoteData = data.quote.quoteText
-    quoteContainer.textContent = quoteData
+    var quoteData = data.quote.quoteText;
+    quoteContainer.textContent = quoteData;
   },
   error: data => {
-    errorModal.classList.remove('hidden')
+    errorModal.classList.remove('hidden');
   }
 })
 
 inputData.addEventListener("input", dollarConverter)
-errorButton.addEventListener("click", function(){
-  errorModal.classList.add('hidden')
+document.addEventListener('load', function () {
+  var loader = document.querySelector('.loader');
+  loader.className += ' hidden';
+})
+errorButton.addEventListener("click", function () {
+  errorModal.classList.add('hidden');
 })
 
 function dollarConverter(event) {
@@ -52,16 +56,11 @@ function dollarConverter(event) {
   }
 
   console.log(event.target.value)
-  var newBitcoin = dollarAmount * bitcoinInfo
-  var newEthereum = dollarAmount * ethereumInfo
-  var newLitecoin = dollarAmount * litecoinInfo
+  var newBitcoin = dollarAmount * bitcoinInfo;
+  var newEthereum = dollarAmount * ethereumInfo;
+  var newLitecoin = dollarAmount * litecoinInfo;
 
   bitcoinData.textContent = newBitcoin.toFixed(5);
   ethereumData.textContent = newEthereum.toFixed(5);
   litecoinData.textContent = newLitecoin.toFixed(5);
 }
-
-document.addEventListener('load', function (){
-  var loader = document.querySelector('.loader');
-  loader.className += ' hidden';
-})
