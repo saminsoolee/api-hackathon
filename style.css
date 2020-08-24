@@ -5,15 +5,20 @@ body {
 
 h1{
   font-family: 'Monoton', cursive;
-  padding: 15px;
+  font-size: 50px;
+  padding: 1.5rem;
 }
 
 .container {
   max-width: 1000px;
 }
 
+.quote-container {
+  padding: 1rem;
+}
+
 h5, p {
-  font-size: 10px;
+  font-size: 11px;
   font-family: 'Press Start 2P', cursive;
   color: whitesmoke;
 }
@@ -27,7 +32,7 @@ td {
 }
 
 table {
-  padding: auto;
+  padding: 2rem;
 }
 
 button {
