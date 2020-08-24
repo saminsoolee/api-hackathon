@@ -5,14 +5,15 @@ body {
 
 h1{
   font-family: 'Monoton', cursive;
+  padding: 15px;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 h5, p {
-  font-size: 9px;
+  font-size: 10px;
   font-family: 'Press Start 2P', cursive;
   color: whitesmoke;
 }
