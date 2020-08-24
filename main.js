@@ -6,6 +6,8 @@ var ethereumData = document.querySelector(".ethereum-data");
 var litecoinData = document.querySelector(".litecoin-data");
 var inputData = document.querySelector(".input-dollar-amount");
 var dollarButton = document.querySelector(".us-button")
+var errorButton = document.querySelector(".error-info");
+var errorModal = document.querySelector(".error-modal");
 var bitcoinInfo;
 var ethereumInfo;
 var litecoinInfo;
@@ -20,10 +22,9 @@ $.ajax({
     bitcoinData.textContent = bitcoinInfo.toFixed(9)
     ethereumData.textContent = ethereumInfo.toFixed(5)
     litecoinData.textContent = litecoinInfo.toFixed(5)
-    // console.log(bitcoinInfo)
-    // console.log(ethereumInfo)
-    // console.log(litecoinInfo)
-    // console.log(data)
+  },
+  error: data => {
+    errorModal.classList.remove('hidden');
   }
 })
 
@@ -31,15 +32,22 @@ $.ajax({
   type: "GET",
   url: "https://quote-garden.herokuapp.com/api/v2/quotes/random",
   success: data => {
-    var quoteData = data.quote.quoteText
-    quoteContainer.textContent = quoteData
-    // console.log(data)
-    // console.log(quoteData)
+    var quoteData = data.quote.quoteText;
+    quoteContainer.textContent = quoteData;
+  },
+  error: data => {
+    errorModal.classList.remove('hidden');
   }
 })
 
 inputData.addEventListener("input", dollarConverter)
-
+document.addEventListener('load', function () {
+  var loader = document.querySelector('.loader');
+  loader.className += ' hidden';
+})
+errorButton.addEventListener("click", function () {
+  errorModal.classList.add('hidden');
+})
 
 function dollarConverter(event) {
   var dollarAmount = event.target.value;
@@ -48,31 +56,11 @@ function dollarConverter(event) {
   }
 
   console.log(event.target.value)
-  var newBitcoin = dollarAmount * bitcoinInfo
-  var newEthereum = dollarAmount * ethereumInfo
-  var newLitecoin = dollarAmount * litecoinInfo
+  var newBitcoin = dollarAmount * bitcoinInfo;
+  var newEthereum = dollarAmount * ethereumInfo;
+  var newLitecoin = dollarAmount * litecoinInfo;
 
   bitcoinData.textContent = newBitcoin.toFixed(5);
   ethereumData.textContent = newEthereum.toFixed(5);
   litecoinData.textContent = newLitecoin.toFixed(5);
 }
-
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'line',
-
-  // The data for our dataset
-  data: {
-    labels: ['Jan', 'March', 'May','July', 'Aug'],
-    datasets: [{
-      label: 'CryptoCurrency Rates',
-      backgroundColor: 'rgb(81,172,199)',
-      borderColor: 'rgb(81,172,199)',
-      data: [0, 10, 2, 13, 45, 45, 30]
-    }]
-  },
-
-  // Configuration options go here
-  options: {}
-});
