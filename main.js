@@ -1,4 +1,4 @@
-var key;
+var key = "71e9a5e20d69c0d631300705fc66962f6155ff6f5007ec4d356ba293afc3c3d1";
 var quoteContainer = document.querySelector(".quote-container > p");
 var usdollarData = document.querySelector(".usdollar-data");
 var bitcoinData = document.querySelector(".bitcoin-data");
@@ -56,23 +56,3 @@ function dollarConverter(event) {
   ethereumData.textContent = newEthereum.toFixed(5);
   litecoinData.textContent = newLitecoin.toFixed(5);
 }
-
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-  // The type of chart we want to create
-  type: 'line',
-
-  // The data for our dataset
-  data: {
-    labels: ['Jan', 'March', 'May','July', 'Aug'],
-    datasets: [{
-      label: 'CryptoCurrency Rates',
-      backgroundColor: 'rgb(81,172,199)',
-      borderColor: 'rgb(81,172,199)',
-      data: [0, 10, 2, 13, 45, 45, 30]
-    }]
-  },
-
-  // Configuration options go here
-  options: {}
-});
