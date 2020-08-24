@@ -1,40 +1,42 @@
-*{
+body {
   background-color: #202020;
   font-family: 'Alata', sans-serif;
 }
+
 h1{
-  padding-top: 10px;
   font-family: 'Monoton', cursive;
-}
-.container {
-  max-width: 800px;
+  padding: 15px;
 }
 
-.quote-container {
-  padding: 10px;
+.container {
+  max-width: 1000px;
 }
 
 h5, p {
-  font-size: 9px;
+  font-size: 10px;
   font-family: 'Press Start 2P', cursive;
   color: whitesmoke;
 }
 
-.t-head{
-  text-align: center;
-}
-
 tr {
   line-height: .75rem;
-  text-align: center;
 }
 
-input, td {
+td {
   color:whitesmoke;
+}
+
+table {
+  padding: auto;
 }
 
 button {
   font-family: 'Alata', sans-serif;
+}
+
+.input-dollar-amount {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .current-event-container {

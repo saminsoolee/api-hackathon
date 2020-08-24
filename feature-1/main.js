@@ -1,4 +1,4 @@
-var key =
+var key;
 var quoteContainer = document.querySelector(".quote-container > p");
 var usdollarData = document.querySelector(".usdollar-data");
 var bitcoinData = document.querySelector(".bitcoin-data");
@@ -64,12 +64,12 @@ var chart = new Chart(ctx, {
 
   // The data for our dataset
   data: {
-    labels: ['January', 'April', 'July','October', 'Dec'],
+    labels: ['Jan', 'March', 'May','July', 'Aug'],
     datasets: [{
       label: 'CryptoCurrency Rates',
       backgroundColor: 'rgb(81,172,199)',
       borderColor: 'rgb(81,172,199)',
-      data: [0, 10, 5, 2, 20, 30, 45]
+      data: [0, 10, 2, 13, 45, 45, 30]
     }]
   },
 
