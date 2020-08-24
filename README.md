@@ -30,4 +30,5 @@ Learned Skills:
 
 Screenshots of the Application:
 1. Can be found in the radix-screenshot folder.
+
   a. folder contains: Desktop, iPad, and Mobile view of the Application.
