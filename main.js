@@ -20,10 +20,7 @@ $.ajax({
     bitcoinData.textContent = bitcoinInfo.toFixed(9)
     ethereumData.textContent = ethereumInfo.toFixed(5)
     litecoinData.textContent = litecoinInfo.toFixed(5)
-    // console.log(bitcoinInfo)
-    // console.log(ethereumInfo)
-    // console.log(litecoinInfo)
-    // console.log(data)
+
   }
 })
 
@@ -33,8 +30,6 @@ $.ajax({
   success: data => {
     var quoteData = data.quote.quoteText
     quoteContainer.textContent = quoteData
-    // console.log(data)
-    // console.log(quoteData)
   }
 })
 

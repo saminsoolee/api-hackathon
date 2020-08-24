@@ -17,7 +17,7 @@ body {
 }
 
 .loader.hidden {
-  animation: fadeOut 4s;
+  animation: fadeOut 5s;
   animation-fill-mode: forwards;
 }
 
