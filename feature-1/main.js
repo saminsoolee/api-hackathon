@@ -1,4 +1,4 @@
-var key = "71e9a5e20d69c0d631300705fc66962f6155ff6f5007ec4d356ba293afc3c3d1"
+var key;
 var quoteContainer = document.querySelector(".quote-container > p");
 var usdollarData = document.querySelector(".usdollar-data");
 var bitcoinData = document.querySelector(".bitcoin-data");
