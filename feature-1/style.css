@@ -1,17 +1,14 @@
-*{
+body {
   background-color: #202020;
   font-family: 'Alata', sans-serif;
 }
+
 h1{
-  padding-top: 10px;
   font-family: 'Monoton', cursive;
 }
+
 .container {
   max-width: 800px;
-}
-
-.quote-container {
-  padding: 10px;
 }
 
 h5, p {
@@ -20,21 +17,25 @@ h5, p {
   color: whitesmoke;
 }
 
-.t-head{
-  text-align: center;
-}
-
 tr {
   line-height: .75rem;
-  text-align: center;
 }
 
-input, td {
+td {
   color:whitesmoke;
+}
+
+table {
+  padding: auto;
 }
 
 button {
   font-family: 'Alata', sans-serif;
+}
+
+.input-dollar-amount {
+  background-color: whitesmoke;
+  color: black;
 }
 
 .current-event-container {
