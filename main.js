@@ -56,3 +56,8 @@ function dollarConverter(event) {
   ethereumData.textContent = newEthereum.toFixed(5);
   litecoinData.textContent = newLitecoin.toFixed(5);
 }
+
+document.addEventListener('load', function (){
+  var loader = document.querySelector('.loader');
+  loader.className += ' hidden';
+})
