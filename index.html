@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
   <title>API Hackathon</title>
 </head>
+
 <body>
-    <div class="loader hidden">
-      <img src="images/loading.gif" alt="loading.."class="loader-gif">
+  <div class="loader hidden">
+    <img src="images/loading.gif" alt="loading.." class="loader-gif">
+  </div>
+  <div class="modal-overlay error-modal hidden">
+    <div class="modal-content">
+      <p>Unexpected Error!! Please check back again soon!</p>
+      <button class="btn-info error-info">Home</button>
     </div>
-    <div class="modal-overlay error-modal hidden">
-      <div class="modal-content">
-        <p>Unexpected Error!! Please check back again soon!</p>
-        <button class="btn-info error-info">Home</button>
-      </div>
-    </div>
+  </div>
   <div class="container">
     <h1 class="container text-center text-info">Radix</h1>
     <div class="quote-container text-center">
@@ -44,8 +46,8 @@
           <tr>
             <td><button class="btn btn-info btn-block btn-sm us-button">US Dollar</button></td>
             <td class="usdollar-data text-center"><input type="number" placeholder="$" class="input-dollar-amount"></td>
-            </tr>
-            <tr>
+          </tr>
+          <tr>
             <td><button class="btn btn-info btn-sm btn-block">Bitcoin</button></td>
             <td class="bitcoin-data text-center"></td>
           </tr>
@@ -68,4 +70,5 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>
