@@ -93,8 +93,15 @@ table {
 
 button {
   font-family: 'Alata', sans-serif;
+  background-color: #5bc0de;
+  color: whitesmoke;
 }
-
+.btn-label {
+  outline: none;
+}
+.btn-label:hover {
+  cursor: default;
+}
 .input-dollar-amount {
   background-color: whitesmoke;
   color: black;
