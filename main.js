@@ -55,7 +55,6 @@ function dollarConverter(event) {
     (dollarAmount = 1)
   }
 
-  console.log(event.target.value)
   var newBitcoin = dollarAmount * bitcoinInfo;
   var newEthereum = dollarAmount * ethereumInfo;
   var newLitecoin = dollarAmount * litecoinInfo;
