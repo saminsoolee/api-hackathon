@@ -1,6 +1,6 @@
 # Radix: Cryptocurrency Converter
 
-A solo hackathon project utilizing the data from two public APIs to create.
+A solo hackathon project utilizing the data from two public APIs to create an application.
 
 Current Feature List:
 1. Loading page which shows if the AJAX call is successful.
