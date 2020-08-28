@@ -1,5 +1,6 @@
-# api-hackathon
-A hackathon project utilizing the data from two public APIs to create.
+# Radix: Cryptocurrency Converter
+api-hackathon
+A solo hackathon project utilizing the data from two public APIs to create.
 
 Current Feature List:
 1. Loading page which shows if the AJAX call is successful.
