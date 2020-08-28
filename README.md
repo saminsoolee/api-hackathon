@@ -1,5 +1,5 @@
 # Radix: Cryptocurrency Converter
-api-hackathon
+
 A solo hackathon project utilizing the data from two public APIs to create.
 
 Current Feature List:
